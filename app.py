@@ -104,4 +104,5 @@ def predict():
         print(f"Error in /predict: {e}")
         return jsonify({'error': str(e)}), 500
 
-# 🟢 Vercel akan membaca variabel `app` ini!
+# 🟢 Penting untuk Vercel agar bisa mendeteksi variabel 'app'
+app = app
