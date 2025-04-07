@@ -1,0 +1,7 @@
+[build]
+install = [
+    "python -m nltk.downloader stopwords wordnet punkt"
+]
+
+[start]
+run = "gunicorn app:app"
